@@ -80,10 +80,34 @@ class _MyOrderState extends State<MyOrder> {
                     Navigator.pop(context);
                   },
                 ),
-              ],))
+              ],)),
+     bottomNavigationBar: BottomNavigationBar(
+    type: BottomNavigationBarType.fixed,
+    fixedColor: Color(0xFF00000),
+    currentIndex: 0,
+    items: [
+    BottomNavigationBarItem(
+    icon: new Icon(Icons.home),
+    title: new Text('Home'),
     ),
-    );
-  }
+      BottomNavigationBarItem(
+          icon: new Icon(Icons.search),
+          title: new Text('Search'),
+      ),
+        BottomNavigationBarItem(
+        icon: new Icon(Icons.done),
+    title: new Text('Like'),
+        ),
+      BottomNavigationBarItem(
+          icon: new Icon(Icons.sentiment_very_satisfied),
+          title: new Text('Profile'),
+      )
+
+          ]
+
+    ),
+    ),
+    );}
 
 }
 
